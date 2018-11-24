@@ -12,7 +12,15 @@
         android:background="@drawable/back"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="60dp"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
 
         <TextView
             android:id="@+id/textView"
@@ -49,12 +57,6 @@
             android:text="LISTADO DE CATEGORIAS"
             android:textSize="24sp"
             android:textStyle="bold" />
-
-
-        <ListView
-            android:id="@+id/list"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"></ListView>
 
 
     </RelativeLayout>
