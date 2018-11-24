@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Carrito</string>
+    <string name="bienvenida"> Bienvenido a Categorias </string>
+    <string name="categoria"> Introduce una categoria </string>
+    <string name="enviar"> Crear </string>
+    <string name="toast"> Ha introducido la categoria: </string>
+    <string name="usermane"> Nombre Usuario </string>
+    <string name="entrar"> Entrar </string>
+
+</resources>
