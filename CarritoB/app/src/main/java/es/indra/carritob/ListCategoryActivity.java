@@ -30,25 +30,26 @@ public class ListCategoryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_category);
         getCategorias();
 
-
-        arrayAdapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1,listadoArray);
         listado = findViewById(R.id.list);
+
+        arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, listadoArray);
+
         listado.setAdapter(arrayAdapter);
 
 
-        Intent intent = getIntent();
+        /*Intent intent = getIntent();
 
         String mensaje = intent.getStringExtra("mensaje");
 
         TextView tv = findViewById(R.id.tv);
 
-        tv.setText(mensaje);
+        tv.setText(mensaje);*/
     }
 
     private void getCategorias() {
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://localhost:8081/categoria/")
+                .baseUrl("http://localhost:8081/categoria")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         RestService rest = retrofit.create(RestService.class);
